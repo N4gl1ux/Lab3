@@ -374,17 +374,13 @@ public class MainActivity extends AppCompatActivity {
 
             char lastChar = currentText.charAt(currentText.length() - 1);
 
-            if (lastChar == '*' || lastChar == '/') {
+            if (lastChar == '*' || lastChar == '/' || lastChar == '+' || lastChar == '-' || lastChar == '√') {
 
-                calculatorScreen.setText(currentText);
+                calculatorScreen.setText(currentText + "√");
             }
             else if (lastChar == '.') {
 
                 calculatorScreen.setText(currentText + "0√");
-            }
-            else if (lastChar == '+' || lastChar == '-' || lastChar == '√') {
-
-                calculatorScreen.setText(currentText + "√");
             }
             else {
 
